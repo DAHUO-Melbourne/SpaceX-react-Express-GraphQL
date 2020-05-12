@@ -8,7 +8,7 @@ export default function launchItem({launch: {flight_number, mission_name, launch
     return (
         <div className="card card-body mb-3">
             <div className="row">
-                <div className="cod-md-9">
+                <div className="col-md-9">
                     <h4>
                         Mission: {''}
                         <span
@@ -20,7 +20,7 @@ export default function launchItem({launch: {flight_number, mission_name, launch
                              { mission_name }</span></h4>
                     <p>Date: <Moment format="YYYY-MM-DD HH:mm">{launch_date_local}</Moment></p>
                 </div>
-                <div className="cod-md-3">
+                <div className="col-md-3">
                     <Link to={`/launch/${flight_number}`} className="btn btn-secondary">Launch Details</Link>
                 </div>
             </div>            

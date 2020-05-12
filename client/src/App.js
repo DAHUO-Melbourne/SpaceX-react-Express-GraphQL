@@ -15,7 +15,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className="App">
+        <div className="container">
           <img
            src={logo} 
            alt="SpaceX" 
